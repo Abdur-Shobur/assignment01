@@ -1,0 +1,467 @@
+/* global CSS */
+/* color #06bbe5 */
+* {
+  /* 1 rem font-size = 10 px  */
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+p,
+ul,
+li,
+input {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 3rem;
+  background: #2fc2e4;
+  text-shadow: 1px 1px 1px #878787;
+  box-shadow: 3px 3px 10px #2fc2e4;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 7px;
+  border: none;
+}
+
+.tittle_txt {
+  font-size: 7rem;
+  text-transform: capitalize;
+  line-height: 7rem;
+}
+
+.pragraph_txt {
+  margin: 3.5rem 0;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.color {
+  color: #2fc2e4;
+  font-size: 7rem;
+}
+
+/* globlal mesurment  */
+.ptb_5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.mb_3 {
+  margin-bottom: 3 rem;
+}
+.mtb_3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.mtb_5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.mtb_10 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.hr {
+  width: 10rem;
+  height: 5px;
+  background: red;
+  margin: 3rem 0;
+}
+
+.colorfull1 {
+  position: absolute !important;
+  width: 44rem;
+  height: 28rem;
+  border-radius: 50%;
+  z-index: -9;
+  top: -18px;
+  right: 16px;
+  filter: blur(72px);
+}
+/* ------------------------------------------------------
+****************** banner section  ******************
+------------------------------------------------------ */
+.banner {
+  background: url("img/banner bg.jpg") no-repeat center center;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.23),
+    rgb(9, 18, 39)
+  );
+  z-index: -1;
+}
+
+.banner_wrap {
+  text-align: center;
+}
+
+.banner_content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.banner_wrap h1 {
+  color: #fff;
+}
+
+.banner_wrap p {
+  color: #fff;
+  margin: 3.5rem 0;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.banner_content a {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------
+****************** Donation amount  ******************
+------------------------------------------------------ */
+
+.donation_amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.donation_amount_wrap > * {
+  text-align: center;
+}
+
+.donation_amount_tk {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* donation_amount_tk */
+.donation_amount_tk ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.donation_amount_tk ul li button {
+  padding: 4.5rem 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  color: #0c52d8;
+  border: 4px solid transparent;
+  box-shadow: 2px 2px 8px #ddddddd4;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  background-color: #2fc2e447;
+}
+
+.active {
+  border: 4px solid #2e85c699 !important;
+  background: #2fc2e4d1 !important;
+  color: #fff !important;
+}
+.donation_amount_tk form input[type="number"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #2fc2e4;
+  text-align: center;
+  padding: 20px 0 7px 0;
+  font-size: 3rem;
+  margin: 20px 0;
+}
+.donation_amount_tk form input[type="number"]:focus {
+  outline: none;
+}
+.donation_amount_tk form input[type="number"] ::-webkit-input-placeholder {
+  /* Edge */
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.donation_amount_tk form input[type="number"]:-ms-input-placeholder {
+  /* Internet Explorer */
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.donation_amount_tk form input[type="number"]::placeholder {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.donation_amount_tk form > :nth-child(2) {
+}
+
+/* ------------------------------------------------------
+****************** Donation Plan  ******************
+------------------------------------------------------ */
+.donation_plan {
+  background: #96f6fb1f;
+}
+
+.donation_plan_txt {
+  text-align: center;
+}
+.plan_card_wrap {
+  width: 1400px;
+  margin: 0 auto;
+}
+.donation_plan_card {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.card {
+  box-shadow: 1px 1px 4px #b3b3b3;
+  border-radius: 10px;
+  background: #d6dc0f4d;
+  padding: 4rem 3rem;
+}
+.card:nth-child(2) {
+  background: #8bf1e854;
+}
+.card:nth-child(3) {
+  background: #c5686873;
+}
+.card .icon span img {
+  width: 35%;
+}
+
+.card .body h2 {
+  margin-top: 2.5rem;
+  font-size: 4rem;
+  text-transform: capitalize;
+  line-height: 5rem;
+}
+.card:nth-child(1) h2 {
+  color: #868904;
+}
+.card:nth-child(2) h2 {
+  color: #01717c;
+}
+.card:nth-child(3) h2 {
+  color: #ae4848;
+}
+.card .body p {
+  margin: 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+/* ------------------------------------------------------
+****************** Donation Blog  ******************
+------------------------------------------------------ */
+
+.donation_blog {
+  width: 1400px;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.donation_blog_wrap {
+  padding: 5rem 0;
+  gap: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.donation_content p {
+  font-size: 2.3rem;
+}
+.donation_image img {
+  border-radius: 1rem;
+}
+
+/* ------------------------------------------------------
+****************** Up comming event  ******************
+------------------------------------------------------ */
+.up_comming_event {
+  position: relative;
+}
+.event_box_wrap {
+  display: flex;
+}
+.event_box {
+  display: flex;
+}
+.event_box .date {
+  width: 100%;
+}
+.event_box .date ul {
+  display: flex;
+  justify-content: space-between;
+}
+.event_heading {
+  text-align: center;
+}
+
+.up_comming_event_blog {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.event_box {
+  margin: 1.5rem;
+  box-shadow: 1px 1px 9px #c7c7c7;
+  padding: 2rem;
+  border-radius: 1rem;
+  flex: 1;
+}
+.event_box .event_img {
+  flex: 1;
+}
+.event_box .event_img img {
+  border-radius: 1rem;
+}
+.event_box .event_content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+  flex: 1;
+}
+.event_box .event_content h6 {
+  font-size: 2rem;
+}
+.event_box .event_content p {
+  font-size: 1.5rem;
+}
+.event_box .event_content li {
+  display: block;
+}
+.event_box .event_content li span {
+  font-size: 2rem;
+}
+
+.learn_more_btn .btn1 {
+  font-size: 1.5rem;
+  background: #2fc2e4;
+  text-shadow: 1px 1px 1px #878787;
+  box-shadow: 3px 3px 10px #2fc2e4;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 7px;
+  border: none;
+}
+/* ------------------------------------------------------
+****************** Email Subscribe ******************
+------------------------------------------------------ */
+.update_section_content {
+  text-align: center;
+}
+.update_section_email {
+  max-width: 1080px;
+  background-image: linear-gradient(
+    to right,
+    rgba(26, 177, 212, 0.41),
+    rgba(68, 146, 102, 0.38)
+  );
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.subscribe_wrap {
+  display: flex;
+  justify-content: center;
+}
+.subscribe_wrap input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  padding: 1rem;
+}
+.subscribe_wrap input:nth-child(1) {
+  border-radius: 1rem 0 0 1rem;
+}
+.subscribe_wrap input:nth-child(2) {
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem 2rem;
+  background-color: #2fc2e4;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* footer  */
+footer {
+  background: black;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+footer p {
+  font-size: 3rem;
+  color: #fff;
+}
