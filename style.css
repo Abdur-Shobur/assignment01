@@ -368,6 +368,7 @@ a {
 }
 .event_box .event_img img {
   border-radius: 1rem;
+  min-height: 25rem;
 }
 .event_box .event_content {
   display: flex;
